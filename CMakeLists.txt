@@ -6,7 +6,9 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories("${CMAKE_SOURCE_DIR}/sdl2/x86_64-w64-mingw32/include")
 
 add_executable(trabalho_01 main.cpp
-        midpoint.cpp)
+        algorithms/midpoint.cpp
+        algorithms/graphic-primitives.h
+        algorithms/cohen-sutherland.cpp)
 
 target_link_libraries(trabalho_01
         mingw32
