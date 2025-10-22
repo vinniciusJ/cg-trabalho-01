@@ -120,6 +120,27 @@ int main(int argc, char* argv[]) {
             }
         }
 
+        std::vector<Point> boundary_box = {
+            {10, 10},
+            {790, 10},
+            {790, 590},
+            {10, 590}
+        };
+
+        draw_polygon(boundary_box, YELLOW, sdl_pixel_writer);
+
+        std::vector<Point> pentagon = {
+            {400, 150},
+            {550, 250},
+            {500, 450},
+            {300, 450},
+            {250, 250}
+        };
+
+        draw_polygon(pentagon, GREEN, sdl_pixel_writer);
+
+        fill_polygon_scanline(pentagon, GREEN, sdl_pixel_writer);
+
         SDL_RenderPresent(renderer);
     }
 

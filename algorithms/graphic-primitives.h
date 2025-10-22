@@ -63,6 +63,10 @@ namespace GraphicPrimitives {
     RegionCode get_region_code(DoublePoint point, const ClipWindow& window);
 
     bool cohen_sutherland_clip(DoublePoint& p1, DoublePoint& p2, const ClipWindow& window);
+
+    void draw_polygon(const std::vector<Point>& vertices, int color, const PixelWriter& writer);
+
+    void fill_polygon_scanline(const std::vector<Point>& vertices, int color, const PixelWriter& writer);
 }
 
 
