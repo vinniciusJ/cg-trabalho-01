@@ -1,4 +1,4 @@
-#include "graphic-primitives.h"
+#include "../graphic-primitives.h"
 
 namespace GraphicPrimitives {
 

@@ -1,9 +1,6 @@
-//
-// Created by vinicius.jimenez on 10/21/2025.
-//
 #include <cmath>
 
-#include "graphic-primitives.h"
+#include "../graphic-primitives.h"
 
 namespace GraphicPrimitives {
     void fill_polygon_scanline(const std::vector<Point>& vertices, const int color, const PixelWriter& writer) {

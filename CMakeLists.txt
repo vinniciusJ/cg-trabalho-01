@@ -6,11 +6,15 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories("${CMAKE_SOURCE_DIR}/sdl2/x86_64-w64-mingw32/include")
 
 add_executable(trabalho_01 main.cpp
-        algorithms/midpoint.cpp
-        algorithms/graphic-primitives.h
-        algorithms/cohen-sutherland.cpp
-        algorithms/polygon.cpp
-        algorithms/scanline.cpp)
+        graphic-primitives/algorithmns/midpoint.cpp
+        graphic-primitives/graphic-primitives.h
+        graphic-primitives/algorithmns/cohen-sutherland.cpp
+        graphic-primitives/algorithmns/polygon.cpp
+        graphic-primitives/algorithmns/scanline.cpp
+        utils/sdl-application.h
+        utils/sdl-application.cpp
+        demo.cpp
+        demo.h)
 
 target_link_libraries(trabalho_01
         mingw32

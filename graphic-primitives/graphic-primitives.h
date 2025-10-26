@@ -1,7 +1,3 @@
-//
-// Created by vinicius.jimenez on 10/21/2025.
-//
-
 #ifndef TRABALHO_01_GRAPHIC_PRIMITIVES_H
 #define TRABALHO_01_GRAPHIC_PRIMITIVES_H
 

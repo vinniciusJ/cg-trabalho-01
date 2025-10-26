@@ -1,7 +1,4 @@
-//
-// Created by vinicius.jimenez on 10/21/2025.
-//
-#include "graphic-primitives.h"
+#include "../graphic-primitives.h"
 
 namespace GraphicPrimitives {
     RegionCode get_region_code(const DoublePoint point, const ClipWindow& window) {
