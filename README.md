@@ -15,7 +15,7 @@ Foram implementados os seguintes algoritmos de primitivas gráficas:
 
 Ao executar a aplicação, você verá uma janela SDL que desenha uma casa com um telhado marrom, paredes beges, uma porta marrom, e uma janela com divisões, tudo sob um céu azul com um sol laranja e um chão verde.
 
-![Exemplo de uso das primitivas](build/aplicacao-demo.png)
+![Exemplo de uso das primitivas](aplicacao-demo.png)
 
 ## Como Executar
 
