@@ -64,22 +64,22 @@ void GraphicPrimitivesDemo::on_render() {
         {200, 250}, {600, 250}, {600, 450}, {200, 450}
     };
 
-    fill_polygon_scanline(house_base, LIGHT_YELLOW_HOUSE, sdl_pixel_writer); // <-- Usando a nova cor aqui
-    draw_polygon(house_base, BLACK, sdl_pixel_writer); // Contorno
+    fill_polygon_scanline(house_base, LIGHT_YELLOW_HOUSE, sdl_pixel_writer);
+    draw_polygon(house_base, BLACK, sdl_pixel_writer);
 
     const std::vector<Point> roof_triangle = {
         {180, 250}, {620, 250}, {400, 150}
     };
 
     fill_polygon_scanline(roof_triangle, BROWN_ROOF, sdl_pixel_writer);
-    draw_polygon(roof_triangle, BLACK, sdl_pixel_writer); // Contorno
+    draw_polygon(roof_triangle, BLACK, sdl_pixel_writer);
 
     const std::vector<Point> door_rect = {
         {250, 350}, {300, 350}, {300, 450}, {250, 450}
     };
 
     fill_polygon_scanline(door_rect, BROWN_ROOF, sdl_pixel_writer);
-    draw_polygon(door_rect, BLACK, sdl_pixel_writer); // Contorno
+    draw_polygon(door_rect, BLACK, sdl_pixel_writer);
 
     constexpr ClipWindow window_frame = {350, 300, 550, 400};
 
@@ -88,11 +88,11 @@ void GraphicPrimitivesDemo::on_render() {
     draw_midpoint_line({window_frame.x_max, window_frame.y_max}, {window_frame.x_min, window_frame.y_max}, CLIP_COLOR, sdl_pixel_writer);
     draw_midpoint_line({window_frame.x_min, window_frame.y_max}, {window_frame.x_min, window_frame.y_min}, CLIP_COLOR, sdl_pixel_writer);
 
-    DoublePoint h_p1 = {340, 350}; // Começa fora (esquerda)
-    DoublePoint h_p2 = {560, 350}; // Termina fora (direita)
+    DoublePoint h_p1 = {340, 350};
+    DoublePoint h_p2 = {560, 350};
 
-    DoublePoint v_p1 = {450, 290}; // Começa fora (topo)
-    DoublePoint v_p2 = {450, 410}; // Termina fora (base)
+    DoublePoint v_p1 = {450, 290};
+    DoublePoint v_p2 = {450, 410};
 
     if (cohen_sutherland_clip(h_p1, h_p2, window_frame)) {
         draw_midpoint_line(

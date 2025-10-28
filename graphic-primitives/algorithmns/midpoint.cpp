@@ -1,3 +1,5 @@
+#include <cmath>
+
 #include "../graphic-primitives.h"
 
 namespace GraphicPrimitives {

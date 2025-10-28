@@ -3,6 +3,9 @@ project(trabalho_01)
 
 set(CMAKE_CXX_STANDARD 20)
 
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libgcc")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libstdc++")
+
 include_directories("${CMAKE_SOURCE_DIR}/sdl2/x86_64-w64-mingw32/include")
 
 add_executable(trabalho_01 main.cpp

@@ -5,6 +5,8 @@
 
 #include <cstdint>
 #include <functional>
+#include <cmath>
+#include <vector>
 
 namespace GraphicPrimitives {
 

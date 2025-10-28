@@ -1,3 +1,5 @@
+#include <cstddef>
+
 #include "../graphic-primitives.h"
 
 namespace GraphicPrimitives {
